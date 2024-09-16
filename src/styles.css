@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+  font-family: sans-serif;
+  color: white;
+}
+body{
+  padding: 2rem;
+  background-image:linear-gradient(120deg,rgb(107, 107, 107),black);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  animation: movie 7s infinite ease alternate;
+
+  background-size: 400% 400%;
+}
+
+@keyframes movie {
+  0%{
+      background-position: 0% 50%;
+  }
+  50%{
+      background-position: 100% 50%;
+  }
+  100%{ background-position: 0% 50%;}
+
+}
